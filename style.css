@@ -36,6 +36,9 @@ main, header, .foot{
     
 }
 /* nav section  */
+.shortcut{
+    display: none;
+}
 .nav-bar{
     display: flex;
     justify-content: space-between;
@@ -72,6 +75,7 @@ font-weight: 400;
 .banner-container{
     width: 1240px;
     height: 500px; 
+    border-radius: 8px;
     background-image: linear-gradient( 180deg,rgba(19, 19, 24, 0.8) 0%,rgba(19, 19, 24, 0) 100% ),
     url("./Images/Group\ 13\ \(1\)\ \(1\).png");
     background-size:  cover; 
@@ -316,7 +320,6 @@ width: 50%;
 .input-container{
     border: 1px solid #FF5400;
     border-radius: 16px;
-
 }
 
 .travel-com{
@@ -393,37 +396,72 @@ footer{
 /* Responsive  */
 /* mobile device  */
 @media screen and (max-width: 600px) {
-    main, header, .foot{
-        max-width: auto;
-        margin: 30px auto;
-        
+    body{
+       margin: 0 auto;
     }
-    .nav-bar, .populer-container, .img-grid, .hot-ser, .newsletter{
-        flex-direction: column;
+    .nav-icon{
+        display: none;
     }
-    .img-grid-2, .img-grid-3{
-        grid-template-columns: repeat(1,1fr);
+    .shortcut{
+        display: block;
+        width: 1.6em;
+        height: 1.6em;
     }
-    .banner-container, .populer-container{
-        width: 80%;
-        height: 80%;
-        justify-content: start;
-        margin-left: 30px;
+    .nav-bar{
+        margin-left: 2em;
+        margin-right: 1.5em;
+    } 
+    .logo{
+        width: 1.79525rem;
+        height: 2.09475rem;
     }
-    .banner-form{
-        flex-direction: column;
-        width: 90%;
+    .lo-txt{
+        font-size: 1.34644em;
     }
-    .when{
-        width: 100%;
-    }
-    #text1{
-        bottom: 200px;
-    }
+   .banner-container, .input-img{
+    justify-content: start;
+    background-position: center;
+    margin: 3rem auto;
+    border-radius: 1rem;
+    width: 25em;
+    height: 32em;
+   }
+   .banner-title{
+    font-size: 1.5em;
+   } 
+   .banner-title-des{
+    font-size: 1em;
+   }
+   .banner-form{
+    flex-direction: column;
+    width: 80%;
+    height: 40%;
+    align-items: center;
+    margin: auto 1em;
+}
+.when{
+    width: 90%;
+}
+.populer-container, .img-grid{
+    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 1.5em;
+}
+.img-grid-2, .img-grid-3{
+    grid-template-columns: repeat(1,1fr);
+}
+.chooseus-container, .hotel-service{
+    width: 20em;
+}
+.hot-ser{
+    margin: 1rem 1rem;
+    flex-direction: column;
+    align-items: center;
+}
     .hot-ser3{
-        margin-left: 30px;
-        width: 80%;
-    }
+        margin: 1rem 1rem;
+        width: 20.9375rem;
+    } 
     .dis-img-icon, .dis-img-icon-2{
         height: 50%;
         width: 70%;
@@ -437,19 +475,19 @@ footer{
         padding: 20px;
     }
     .newsletter{
+        flex-direction: column;
         width: 100%;
         height: 100%;
     }
-    .input-container{
+    .input{
         width: 100%;
     }
-    .input-img{
-        width: 80%;
+    .input-container{
+        width: 575px;
+        height: 429px;
+        border: 1px solid red;
     }
-    #footer-des{
-        margin-right: auto;
-       margin-left: auto;
+    footer{
+        width: 100%;
     }
-    
-    
 }   
