@@ -1,0 +1,209 @@
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,800&display=swap');
+  /* common part  */
+*{
+    font-family: 'Mulish', sans-serif;
+}
+.cmn-span{
+    color: #FF5400;
+}
+.btn-pri{
+    width: 170px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+   
+    }
+ .cmn-txt{
+ color: rgba(19, 19, 24, 0.70);
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+ }
+ .cmn-title{
+color: #131318;
+text-align: center;
+font-size: 40px;
+font-weight: 800;
+ }
+main, header{
+    max-width: 1240px;
+    margin: 30px auto;
+    
+}
+/* nav section  */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.lo-txt{
+    color: #131318;
+    font-size: 2.4em;
+    font-weight: 800;
+}
+.logo{
+    width: 2.84588rem;
+   height: 3.32056rem;
+}
+.nav-icon > ul{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar li{
+list-style: none;
+margin-left: 30px;
+color: #424247;
+text-align: center;
+font-size: 1.2em;
+font-weight: 400;
+}
+
+/* banner section  */
+.banner-container{
+    width: 1240px;
+    height: 500px; 
+    background-image: linear-gradient( 180deg,rgba(19, 19, 24, 0.8) 0%,rgba(19, 19, 24, 0) 100% ),
+    url("./Images/Group\ 13\ \(1\)\ \(1\).png");
+    background-size:  cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.banner-form{
+display: inline-flex;
+padding: 20px;
+width: 100%;
+align-items: flex-start;
+gap: 24px;
+border-radius: 8px;
+background: rgba(255, 255, 255, 0.30);
+}
+.when{
+width: 174px;
+height: 50px;
+color: rgba(19, 19, 24, 0.50);
+padding-left: 10px;
+border-radius: 8px;
+border: none;
+}
+#search-ber{
+border-radius: 8px;
+background: #FF5400;
+color: #FFF;
+text-align: center;
+font-size: 16px;
+font-weight: 700;
+}
+.banner-title{
+color: #FFF;
+font-size: 64px;
+font-weight: 800;
+margin-bottom: 50px;
+text-align: center;
+}
+.banner-title-des{
+color: #FFF;
+text-align: center;
+font-size: 1em;
+font-weight: 400;
+line-height: 20px;
+margin-bottom: 40px;
+}
+
+/* our popular tour section  */
+.populer-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 80px 0;
+}
+.populer-txt p{
+    margin-bottom: 30px;    
+}
+.populer-txt h3{
+   text-align: start;
+}
+/* Choose Your Destination  */
+#choose-des{
+    text-align: center;
+    padding-bottom: 1.6em;
+}
+.img-grid-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 10px 20px;
+}
+.img-grid{
+    display: flex;
+     gap: 40px;     
+}
+.img-grid1 {
+   width: 100%;
+}
+ .img-grid1 img{
+    width: 100%;
+} 
+.img-grid-2{
+    display: grid;
+    grid-template-columns: 384px 484px 284px;
+    gap: 40px;
+}
+.img-grid-3{
+    display: grid;
+    grid-template-columns: 489px 689px;
+    gap: 40px;
+}
+#text1{
+    text-align: center;
+    color: #FFF;
+    position: relative;
+    bottom: 180px;
+}
+/* why choose us  */
+
+
+/* Responsive  */
+/* mobile device  */
+@media screen and (max-width: 600px) {
+    main, header{
+        max-width: auto;
+        margin: 30px auto;
+        
+    }
+    .nav-bar, .populer-container, .img-grid{
+        flex-direction: column;
+    }
+    .img-grid-2, .img-grid-3{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .banner-container, .populer-container{
+        width: 80%;
+        height: 80%;
+        justify-content: start;
+        margin-left: 30px;
+    }
+    .banner-form{
+        flex-direction: column;
+        width: 90%;
+    }
+    .when{
+        width: 100%;
+    }
+    #text1{
+        bottom: 200px;
+    }
+    
+}   
