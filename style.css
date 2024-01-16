@@ -172,7 +172,48 @@ margin-bottom: 40px;
     position: relative;
     bottom: 180px;
 }
+
 /* why choose us  */
+
+#chooseus-des{
+    text-align: center;
+}
+#hotel{
+    text-align: start;
+    font-size: 24px;
+}
+.hot-ser{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+   padding: 50px;
+
+}
+.hot-ser1{
+border-radius: 16px;
+border: 1px solid rgba(233, 68, 68, 0.20);
+background: rgba(233, 68, 68, 0.05);
+padding-left: 24px;
+}
+.hot-ser2{
+border-radius: 16px;
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05);
+padding: 0px 24px;
+}
+.hot-ser3{
+ border-radius: 16px;
+border: 1px solid rgba(233, 68, 68, 0.20);
+background: rgba(233, 68, 68, 0.05);
+padding-left: 24px;
+margin-left: 300px;
+width: 50%;
+
+    
+ }
+ .chooseus-container{
+    padding: 0 50px;
+ }
 
 
 /* Responsive  */
@@ -183,7 +224,7 @@ margin-bottom: 40px;
         margin: 30px auto;
         
     }
-    .nav-bar, .populer-container, .img-grid{
+    .nav-bar, .populer-container, .img-grid, .hot-ser{
         flex-direction: column;
     }
     .img-grid-2, .img-grid-3{
@@ -204,6 +245,10 @@ margin-bottom: 40px;
     }
     #text1{
         bottom: 200px;
+    }
+    .hot-ser3{
+        margin-left: 30px;
+        width: 80%;
     }
     
 }   
