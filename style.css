@@ -30,7 +30,7 @@ text-align: center;
 font-size: 40px;
 font-weight: 800;
  }
-main, header{
+main, header, .foot{
     max-width: 1240px;
     margin: 30px auto;
     
@@ -48,7 +48,7 @@ main, header{
 }
 .lo-txt{
     color: #131318;
-    font-size: 2.4em;
+    font-size: 2.2em;
     font-weight: 800;
 }
 .logo{
@@ -281,15 +281,124 @@ width: 50%;
     text-align: start;
 }
 
+/* Newsletter section  */
+#input-title{
+    text-align: start;
+    font-size: 24px;
+}
+.input input, #sub-id{
+    width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding-left: 20px;
+    border: none;
+    margin: 20px;
+}
+.inp-txt{
+    margin: 20px;
+}
+#sub-id{
+    background: #FF5400;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+   
+}
+.newsletter{
+    width: 1240px;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.input-container{
+    border: 1px solid #FF5400;
+    border-radius: 16px;
+
+}
+
+.travel-com{
+width: 324px;
+height: 120px;
+background: #FF5400;
+border-radius: 16px;
+padding-top: 25px;
+position: relative;
+bottom: 200px;
+left: 300px;
+transform: rotate(-19.628deg);
+}
+.travel-des{
+color: #FFF;
+text-align: center;
+font-size: 24px;
+font-weight: 400;
+padding: 0px;
+margin: 0px;
+
+}
+.travel-des1{
+padding: 0px;
+margin: 0px;
+color: #FFF;
+font-size: 32px;
+text-align: center;
+font-weight: 800;
+}
+
+/* footer section  */
+footer{
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+}
+#footer-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+#footer-des{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.socials {
+    text-align: center;
+    margin: 0rem auto;
+    padding: 20px 0px 40px 0px;
+  }
+  
+  .hr{
+    border: 1px solid rgba(19, 19, 24, 0.10);
+
+    ;
+  }
+  .copyright {
+    padding: 40px 0px 60px 0px;
+    text-align: center;
+    color: #131318;
+    font-family: Inter;
+    font-size: 0.94863rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+
+
+
+
+
 /* Responsive  */
 /* mobile device  */
 @media screen and (max-width: 600px) {
-    main, header{
+    main, header, .foot{
         max-width: auto;
         margin: 30px auto;
         
     }
-    .nav-bar, .populer-container, .img-grid, .hot-ser{
+    .nav-bar, .populer-container, .img-grid, .hot-ser, .newsletter{
         flex-direction: column;
     }
     .img-grid-2, .img-grid-3{
@@ -327,5 +436,20 @@ width: 50%;
         height: 100%;
         padding: 20px;
     }
+    .newsletter{
+        width: 100%;
+        height: 100%;
+    }
+    .input-container{
+        width: 100%;
+    }
+    .input-img{
+        width: 80%;
+    }
+    #footer-des{
+        margin-right: auto;
+       margin-left: auto;
+    }
+    
     
 }   
