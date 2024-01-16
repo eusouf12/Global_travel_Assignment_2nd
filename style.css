@@ -285,6 +285,47 @@ width: 50%;
     text-align: start;
 }
 
+/* beach section  */
+.beach{
+    width: 1240px;
+    height: 500px; 
+    border-radius: 8px;
+    background-image: url("./unique.jpg");
+    background-size:  cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#beach-title{
+    color: #FFF;
+}
+.review{
+    width: 500px;
+    height: 300px;
+    background-color: antiquewhite;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 16px;
+}
+.beach-des1{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+}
+.beach-des2{
+    color: #131318;
+    font-size: 20px;
+    font-weight: 800;
+    
+}
+
+
+
+
 /* Newsletter section  */
 #input-title{
     text-align: start;
@@ -447,6 +488,16 @@ footer{
     margin-left: 2em;
     margin-right: 1.5em;
 }
+.beach{
+   flex-direction: column; 
+   justify-content: start;
+}
+.review{
+    width: 60%;
+    height: 50%;
+    padding: 0px;
+    border-radius: 16px;
+}
 .img-grid-2, .img-grid-3{
     grid-template-columns: repeat(1,1fr);
 }
@@ -457,10 +508,12 @@ footer{
     margin: 1rem 1rem;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
-    .hot-ser3, .hot-ser1, .hot-ser2{
-        margin: 1rem 1rem;
-        width: 20.9375rem;
+    .hot-ser3{
+        margin: 1rem 3rem;
+        width: 100%;
+
     } 
     .dis-img-icon, .dis-img-icon-2{
         height: 50%;
