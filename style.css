@@ -212,9 +212,74 @@ width: 50%;
     
  }
  .chooseus-container{
-    padding: 0 50px;
+    padding: 0 50 px;
  }
 
+ /* discount section  */
+ #dis-txt{
+    text-align: center;
+ }
+ .discount, .discount-con{
+    padding: 20px 0px;
+ }
+ .dis-img-icon{
+    width: 550px;
+    height: 389px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding-left: 30px;
+    margin-left: 540px ;
+ }
+
+ .dis-img-icon-2{
+    width: 550px;
+    height: 389px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding-left: 30px;
+    margin-right: 540px ;
+ }
+.dis-img-container{
+    width: 1240px;
+    height: 500px; 
+    background-image:
+    url("./Images/Group\ 39.png");
+    background-size:  cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+ }
+ .dis-img-container-2{
+    width: 1240px;
+    height: 500px; 
+    background-image:
+    url("./Images/Group\ 40.png");
+    background-size:  cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+ }
+.dis-icon{
+    display: flex;
+    justify-content: space-evenly;
+}
+#deal-price{
+    font-size: 24px;
+    text-align: start;
+}
+#dis-text{
+    text-align: start;
+}
 
 /* Responsive  */
 /* mobile device  */
@@ -249,6 +314,18 @@ width: 50%;
     .hot-ser3{
         margin-left: 30px;
         width: 80%;
+    }
+    .dis-img-icon, .dis-img-icon-2{
+        height: 50%;
+        width: 70%;
+        margin: 10px;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .dis-img-container-2, .dis-img-container{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
     }
     
 }   
