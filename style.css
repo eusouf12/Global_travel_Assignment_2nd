@@ -418,7 +418,7 @@ footer{
     .lo-txt{
         font-size: 1.34644em;
     }
-   .banner-container, .input-img{
+   .banner-container{
     justify-content: start;
     background-position: center;
     margin: 3rem auto;
@@ -458,7 +458,7 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-    .hot-ser3{
+    .hot-ser3, .hot-ser1, .hot-ser2{
         margin: 1rem 1rem;
         width: 20.9375rem;
     } 
@@ -489,5 +489,10 @@ footer{
     }
     footer{
         width: 100%;
+    }
+    .input-img{
+        width: 400px;
+        height: 300px;
+        margin-left: 0px;
     }
 }   
