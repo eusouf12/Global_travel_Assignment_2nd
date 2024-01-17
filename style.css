@@ -86,6 +86,7 @@ font-weight: 400;
   flex-direction: column;
   justify-content: center;
   align-items: center;  
+  padding:20px;
 }
 .banner-form{
 display: inline-flex;
@@ -152,7 +153,8 @@ margin-bottom: 40px;
 .img-grid-container{
   display: grid;
   grid-template-columns: repeat(1,1fr);
-  padding: 10px 20px;
+   padding: 0px;
+  padding: 0px 20px;
 }
 .img-grid{
     display: grid;
@@ -179,7 +181,7 @@ margin-bottom: 40px;
   text-align: center;
   color: #FFF;
   position: relative;
-  bottom: 180px;
+  bottom: 150px;
 }
 
 /* why choose us  */
@@ -204,12 +206,14 @@ border-radius: 16px;
 border: 1px solid rgba(233, 68, 68, 0.20);
 background: rgba(233, 68, 68, 0.05);
 padding-left: 24px;
+padding: 20px;
 }
 .hot-ser2{
 border-radius: 16px;
 border: 1px solid rgba(41, 206, 246, 0.20);
 background: rgba(41, 206, 246, 0.05);
 padding: 0px 24px;
+padding: 20px;
 }
 .hot-ser3{
 border-radius: 16px;
@@ -219,6 +223,7 @@ padding-left: 24px;
 margin-left: 300px;
 width: 50%;
 grid-template-columns: repeat(1,1fr);
+padding: 20px;
   
 }
 .chooseus-container{
@@ -234,7 +239,7 @@ grid-template-columns: repeat(1,1fr);
 }
 .dis-img-icon{
   width: 550px;
-  height: 389px;
+  height: 380px;
   border-radius: 16px;
   border: 2px solid #FFF;
   background: rgba(255, 255, 255, 0.80);
@@ -528,7 +533,14 @@ footer{
 
 .img-grid-2, .img-grid-3, .img-grid{
   grid-template-columns: repeat(1,1fr);
+  gap: 0px;
 }
+#text1{
+    text-align: center; 
+    position: relative;
+    bottom: 100px;
+  }
+
 .chooseus-container{
   text-align: center;
 }
@@ -547,20 +559,23 @@ footer{
   } 
 
   .dis-img-icon, .dis-img-icon-2{
-      height: 50%;
-      width: 70%;
+      height: 90%;
+      width: 80%;
       margin: 10px;
       align-items: center;
       padding-bottom: 20px;
   }
   .dis-img-container-2, .dis-img-container{
-      width: 80%;
+      width: 100%;
       height: 80%;
       margin: 0 auto;
       border-radius: 8px;
   }
   .discount-con{
      width: 100%;
+  }
+  .dis-icon{
+    flex-direction: column;
   }
   
 .newsletter{
@@ -580,7 +595,7 @@ footer{
     width: 80%;
   }
   .travel-com{
-    width: 30%;
+    width: 40%;
      height: 10%; 
     left: 50%;
   }
