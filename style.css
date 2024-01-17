@@ -464,19 +464,23 @@ footer{
       margin-right: 1.5em;
   } 
   .logo{
-      width: 1.79525rem;
-      height: 2.09475rem;
+      width: 1.8em;
+      height: 2em;
   }
   .lo-txt{
-      font-size: 1.34644em;
+      font-size: 1.4em;
   }
  .banner-container{
   justify-content: start;
   background-position: center;
   margin: 3rem auto;
   border-radius: 1rem;
-  width: 25em;
-  height: 32em;
+  width: 90%;
+  height: 90%;
+
+ }
+ .banner{
+    background-color: #FF5400;
  }
  .banner-title{
   font-size: 1.5em;
